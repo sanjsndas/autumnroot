@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Autumn Root Journal</title>
+  <meta name="description" content="Privacy policy for Autumn Root Journal. We collect no third-party analytics or tracking data. Only your email if you subscribe.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy · Autumn Root Journal">
+  <meta property="og:description" content="How we handle your data: no tracking, no ads, just a simple newsletter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://autumnrootjournal.com/privacy.html">
+  <meta property="og:site_name" content="Autumn Root Journal">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://autumnrootjournal.com/privacy.html">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- reset & base ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #fbf9f5;
+      color: #2f2e2b;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      color: #4a5e3e;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    a:hover {
+      color: #1f2a1b;
+      text-decoration: underline;
+    }
+    /* ---------- typography ---------- */
+    h1, h2, h3, h4 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: #1f2a1b;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #e6e1d6;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1.25rem;
+    }
+    /* ---------- layout container ---------- */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* ---------- header ---------- */
+    .blog-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e6e1d6;
+      padding: 24px 0 16px;
+    }
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: #4a5e3e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fbf9f5;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-family: 'Source Serif 4', serif;
+      line-height: 1;
+    }
+    .logo-text {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #1f2a1b;
+    }
+    .logo-tagline {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #76726a;
+      margin-left: 4px;
+    }
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .main-nav a {
+      color: #3f4d36;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: #4a5e3e;
+      text-decoration: none;
+    }
+    /* ---------- privacy content ---------- */
+    .privacy-card {
+      background: #ffffff;
+      border: 1px solid #e6e1d6;
+      border-radius: 16px;
+      padding: 48px 52px;
+      margin: 40px 0 60px;
+    }
+    .privacy-card h1 {
+      margin-bottom: 8px;
+    }
+    .privacy-meta {
+      color: #7c776e;
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+      border-bottom: 1px solid #efebe3;
+      padding-bottom: 20px;
+    }
+    .privacy-card h2 {
+      font-size: 1.6rem;
+      margin: 36px 0 16px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .privacy-card h2:first-of-type {
+      margin-top: 0;
+    }
+    .privacy-card ul {
+      margin: 0 0 20px 24px;
+      color: #3c3a35;
+    }
+    .privacy-card li {
+      margin-bottom: 8px;
+    }
+    .privacy-card p {
+      color: #3c3a35;
+    }
+    .privacy-card .highlight-box {
+      background: #f2efe8;
+      border-left: 4px solid #4a5e3e;
+      padding: 18px 24px;
+      border-radius: 8px;
+      margin: 28px 0;
+      font-size: 0.98rem;
+    }
+    .privacy-card .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+    .back-home {
+      display: inline-block;
+      margin-top: 36px;
+      font-weight: 500;
+    }
+    /* ---------- footer ---------- */
+    .blog-footer {
+      background: #ffffff;
+      border-top: 1px solid #e6e1d6;
+      padding: 48px 0 32px;
+      margin-top: 20px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+    .footer-col h5 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #1f2a1b;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .footer-col ul {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+    .footer-col a {
+      color: #5f5b53;
+    }
+    .footer-bottom {
+      border-top: 1px solid #e6e1d6;
+      padding-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #7c776e;
+    }
+    /* ---------- responsive ---------- */
+    @media (max-width: 700px) {
+      h1 { font-size: 2rem; }
+      .privacy-card { padding: 28px 20px; }
+      .privacy-card h2 { font-size: 1.4rem; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav ul { gap: 16px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- BLOG HEADER -->
+  <header class="blog-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo-area">
+          <div class="logo-icon">🌱</div>
+          <div>
+            <span class="logo-text">Autumn Root Journal</span>
+            <span class="logo-tagline">soil · seasons · slow growing</span>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <div class="privacy-card">
+      <h1>Privacy Policy</h1>
+      <div class="privacy-meta">Last updated: April 10, 2025</div>
+
+      <p><strong>Autumn Root Journal</strong> is an independent, ad-free gardening publication. We believe that respecting your privacy is part of respecting our readers. This policy explains what data we collect — and, more importantly, what we don’t.</p>
+
+      <div class="highlight-box">
+        <p>📌 <strong>Short version:</strong> We do not use third-party analytics, tracking pixels, or advertising cookies. The only personal data we ever collect is your email address — and only if you voluntarily subscribe to our newsletter.</p>
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>Autumn Root Journal is a digital publication and blog focused on soil health, seasonal planting, and slow gardening. Our website address is <a href="https://autumnrootjournal.com">https://autumnrootjournal.com</a>. You can contact us at <a href="mailto:privacy@autumnrootjournal.com">privacy@autumnrootjournal.com</a> for any privacy-related questions.</p>
+
+      <h2>2. What data we collect (and why)</h2>
+      <p>We keep data collection to an absolute minimum:</p>
+      <ul>
+        <li><strong>Newsletter subscription:</strong> If you choose to sign up for our monthly email (“Letters from the Garden”), we collect your <strong>email address</strong>. This is used solely to send you the newsletter you requested. We use a privacy-focused email service provider (currently <em>Buttondown</em>) that does not sell or share your data. You can unsubscribe at any time via the link in every email.</li>
+        <li><strong>Contact form:</strong> If you use our contact form to get in touch, we receive the <strong>name, email address, and message</strong> you provide. We use this only to respond to your inquiry. We do not add contact form submissions to any mailing list unless you explicitly ask us to.</li>
+        <li><strong>Server logs:</strong> Like most websites, our hosting provider automatically records basic technical information — such as your IP address, browser type, and the pages you visit — for security, debugging, and performance monitoring. These logs are temporary and are not linked to any personally identifiable information. We do not use them for tracking or profiling.</li>
+      </ul>
+      <p>We do <strong>not</strong> collect:</p>
+      <ul>
+        <li>Names or personal details (unless you give them to us via the contact form).</li>
+        <li>Payment information (we don’t sell anything).</li>
+        <li>Location data, device fingerprints, or behavioural profiles.</li>
+        <li>Data from third-party trackers, social media pixels, or advertising networks.</li>
+      </ul>
+
+      <h2>3. Cookies and local storage</h2>
+      <p>We do not use advertising or tracking cookies. The only cookie we set is a small, strictly necessary session cookie to remember your search filter preference if you use the search feature on the homepage. This cookie contains no personal data and expires when you close your browser.</p>
+      <p>We do not use Google Analytics, Facebook Pixel, or any other third-party tracking scripts. If this changes in the future, we will update this policy and ask for your consent first.</p>
+
+      <h2>4. How we use your information</h2>
+      <p>Any information you voluntarily provide is used only for the purpose you provided it:</p>
+      <ul>
+        <li><strong>Email address:</strong> to send you the newsletter you requested.</li>
+        <li><strong>Contact form details:</strong> to reply to your message.</li>
+      </ul>
+      <p>We never sell, rent, or share your personal information with third parties for marketing or any other purpose. We may disclose information if required by law, but we will always notify you unless legally prohibited.</p>
+
+      <h2>5. Data retention</h2>
+      <p>Newsletter subscriber data is retained until you unsubscribe. Contact form messages are kept for up to 12 months for reference, after which they are deleted. Server logs are kept for a maximum of 30 days.</p>
+
+      <h2>6. Your rights</h2>
+      <p>Depending on your location, you may have rights under data protection laws such as the GDPR or CCPA. These typically include the right to access, correct, or delete your personal data, and the right to withdraw consent. To exercise any of these rights, please email us at <a href="mailto:privacy@autumnrootjournal.com">privacy@autumnrootjournal.com</a>.</p>
+      <p>If you are a newsletter subscriber, you can update your preferences or unsubscribe instantly using the link at the bottom of any email we send.</p>
+
+      <h2>7. Third-party services</h2>
+      <p>We use a minimal set of trusted service providers to run the journal:</p>
+      <ul>
+        <li><strong>Email newsletter:</strong> Buttondown (privacy-focused, GDPR-compliant).</li>
+        <li><strong>Web hosting:</strong> Our server host may keep standard access logs (see section 2).</li>
+        <li><strong>Fonts:</strong> Google Fonts, which may collect anonymised usage data. You can read <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s privacy policy here</a>.</li>
+      </ul>
+      <p>None of these providers are permitted to use your data for their own marketing purposes.</p>
+
+      <h2>8. Children’s privacy</h2>
+      <p>Our content is suitable for all ages, but we do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>We may update this privacy policy occasionally to reflect changes in our practices or legal requirements. The “last updated” date at the top of this page will always reflect the most recent version. We encourage you to review this page periodically.</p>
+
+      <h2>10. Contact us</h2>
+      <p>If you have any questions, concerns, or requests regarding your privacy, please reach out:</p>
+      <p>📧 <a href="mailto:privacy@autumnrootjournal.com">privacy@autumnrootjournal.com</a><br>
+      📬 Autumn Root Journal — Privacy Team<br>
+      PO Box 241, Cedar Grove, OR 97016, USA</p>
+
+      <a href="index.html" class="back-home">← Back to home</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="blog-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Autumn Root</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="categories.html">Soil &amp; Compost</a></li>
+            <li><a href="categories.html">Seasonal Planting</a></li>
+            <li><a href="categories.html">Tools &amp; Craft</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Autumn Root Journal. Independent gardening publication.</span>
+        <span>Made with care for the soil.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

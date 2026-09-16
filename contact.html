@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autumn Root Journal – Cultivating soil, seasons, and slow gardening wisdom</title>
+  <meta name="description" content="Autumn Root Journal: independent gardening publication. In-depth articles on soil health, seasonal planting, tool care, seed saving, and the quiet art of growing food.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Autumn Root Journal – Cultivating soil, seasons, and slow gardening wisdom">
+  <meta property="og:description" content="In-depth gardening articles: soil, compost, seasonal planting, tool care, and the thoughtful craft of growing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://autumnrootjournal.com/">
+  <meta property="og:image" content="https://autumnrootjournal.com/images/hero-soil.jpg">
+  <meta property="og:site_name" content="Autumn Root Journal">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://autumnrootjournal.com/">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Autumn Root Journal",
+    "url": "https://autumnrootjournal.com",
+    "description": "Independent gardening publication focused on soil health, seasonal planting, and slow gardening.",
+    "author": {
+      "@type": "Person",
+      "name": "Elena Marsh"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Autumn Root Journal"
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- reset & base ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #fbf9f5;
+      color: #2f2e2b;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      color: #4a5e3e;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    a:hover {
+      color: #1f2a1b;
+      text-decoration: underline;
+    }
+    /* ---------- typography ---------- */
+    h1, h2, h3, h4 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: #1f2a1b;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #e6e1d6;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+    p {
+      margin-bottom: 1.25rem;
+    }
+    /* ---------- layout containers ---------- */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 48px;
+      margin: 40px 0 60px;
+    }
+    @media (max-width: 900px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+    /* ---------- header ---------- */
+    .blog-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e6e1d6;
+      padding: 24px 0 16px;
+    }
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: #4a5e3e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fbf9f5;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-family: 'Source Serif 4', serif;
+      line-height: 1;
+    }
+    .logo-text {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #1f2a1b;
+    }
+    .logo-tagline {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #76726a;
+      margin-left: 4px;
+    }
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .main-nav a {
+      color: #3f4d36;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: #4a5e3e;
+      text-decoration: none;
+    }
+    /* search bar in header */
+    .header-search {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      max-width: 320px;
+    }
+    .header-search input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d9d3c7;
+      background: #ffffff;
+      border-radius: 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+    }
+    .header-search input:focus {
+      outline: none;
+      border-color: #4a5e3e;
+      box-shadow: 0 0 0 2px rgba(74, 94, 62, 0.15);
+    }
+    /* ---------- featured area ---------- */
+    .featured-section {
+      margin: 32px 0 16px;
+      background: #ffffff;
+      border: 1px solid #e6e1d6;
+      border-radius: 16px;
+      padding: 28px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      align-items: center;
+    }
+    .featured-content {
+      flex: 2 1 340px;
+    }
+    .featured-content .category-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a6e5c;
+      background: #f0ede6;
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .featured-content h2 {
+      border-bottom: none;
+      font-size: 2rem;
+      margin-bottom: 8px;
+      padding-bottom: 0;
+    }
+    .featured-content p {
+      color: #4a4740;
+      font-size: 1.05rem;
+    }
+    .featured-meta {
+      display: flex;
+      gap: 20px;
+      font-size: 0.85rem;
+      color: #7c776e;
+      margin: 12px 0 6px;
+    }
+    .featured-image {
+      flex: 1 1 240px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #eae6de;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .featured-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* ---------- article cards ---------- */
+    .article-card {
+      background: #ffffff;
+      border: 1px solid #e6e1d6;
+      border-radius: 16px;
+      padding: 24px 26px;
+      margin-bottom: 28px;
+      transition: border-color 0.1s ease;
+    }
+    .article-card:hover {
+      border-color: #cbc2b2;
+    }
+    .card-category {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5f6b4f;
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .article-card h3 {
+      font-size: 1.6rem;
+      margin: 6px 0 8px;
+      line-height: 1.3;
+    }
+    .article-card h3 a {
+      color: #1f2a1b;
+      text-decoration: none;
+    }
+    .article-card h3 a:hover {
+      text-decoration: underline;
+    }
+    .card-excerpt {
+      color: #4a4740;
+      margin: 12px 0 16px;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: #7c776e;
+      border-top: 1px solid #efebe3;
+      padding-top: 16px;
+      margin-top: 8px;
+    }
+    /* ---------- sidebar ---------- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+    .sidebar-widget {
+      background: #ffffff;
+      border: 1px solid #e6e1d6;
+      border-radius: 16px;
+      padding: 24px 22px;
+    }
+    .sidebar-widget h4 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.2rem;
+      margin-bottom: 18px;
+      border-bottom: 1px solid #e6e1d6;
+      padding-bottom: 10px;
+    }
+    .sidebar-widget ul {
+      list-style: none;
+    }
+    .sidebar-widget li {
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .sidebar-widget li a {
+      font-weight: 500;
+      color: #2f3e27;
+    }
+    .sidebar-widget .meta-small {
+      font-size: 0.75rem;
+      color: #8a857c;
+      display: block;
+      margin-top: 4px;
+    }
+    .about-widget p {
+      font-size: 0.95rem;
+      color: #4a4740;
+    }
+    .newsletter-widget {
+      background: #f2efe8;
+      border-color: #d9d2c4;
+    }
+    .newsletter-widget input {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 12px 0 10px;
+      border: 1px solid #cbc2b2;
+      border-radius: 40px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      background: #ffffff;
+    }
+    .newsletter-widget button {
+      background: #4a5e3e;
+      color: #ffffff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+    .newsletter-widget button:hover {
+      background: #2f3e27;
+    }
+    /* ---------- sections ---------- */
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin: 48px 0 24px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .section-heading h2 {
+      font-size: 1.8rem;
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .section-heading span {
+      font-size: 0.85rem;
+      color: #7c776e;
+    }
+    /* ---------- footer ---------- */
+    .blog-footer {
+      background: #ffffff;
+      border-top: 1px solid #e6e1d6;
+      padding: 48px 0 32px;
+      margin-top: 60px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+    .footer-col h5 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #1f2a1b;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .footer-col ul {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+    .footer-col a {
+      color: #5f5b53;
+    }
+    .footer-bottom {
+      border-top: 1px solid #e6e1d6;
+      padding-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #7c776e;
+    }
+    /* ---------- single article view (hidden by default) ---------- */
+    .single-article {
+      display: none;
+      background: #ffffff;
+      border: 1px solid #e6e1d6;
+      border-radius: 16px;
+      padding: 40px 44px;
+      margin: 32px 0 40px;
+    }
+    .single-article.active {
+      display: block;
+    }
+    .single-article h1 {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+    .single-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #7c776e;
+      margin-bottom: 28px;
+      border-bottom: 1px solid #efebe3;
+      padding-bottom: 20px;
+    }
+    .single-article p {
+      font-size: 1.05rem;
+      color: #3c3a35;
+    }
+    .single-article h2 {
+      font-size: 1.7rem;
+      margin: 32px 0 16px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .single-article h3 {
+      font-size: 1.3rem;
+      margin: 28px 0 12px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #4a5e3e;
+    }
+    /* ---------- misc ---------- */
+    .badge {
+      background: #eae6de;
+      color: #4a3f32;
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+    .faq-item {
+      margin-bottom: 24px;
+      border-bottom: 1px solid #efebe3;
+      padding-bottom: 16px;
+    }
+    .faq-item h4 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .faq-item p {
+      font-size: 0.98rem;
+      color: #4a4740;
+    }
+    .hide {
+      display: none !important;
+    }
+    /* ---------- contact form ---------- */
+    .contact-form {
+      margin-top: 28px;
+      max-width: 640px;
+    }
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+    .contact-form label {
+      display: block;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      color: #2f3e27;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #d9d3c7;
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      background: #fefdfb;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #4a5e3e;
+      box-shadow: 0 0 0 3px rgba(74, 94, 62, 0.1);
+    }
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+    .contact-form .btn-submit {
+      background: #4a5e3e;
+      color: #ffffff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: 'Inter', sans-serif;
+    }
+    .contact-form .btn-submit:hover {
+      background: #2f3e27;
+    }
+    .contact-form .form-message {
+      margin-top: 16px;
+      font-size: 0.95rem;
+      padding: 12px 16px;
+      border-radius: 12px;
+      display: none;
+    }
+    .contact-form .form-message.success {
+      display: block;
+      background: #e8f0e3;
+      color: #2f4a2a;
+      border-left: 4px solid #4a5e3e;
+    }
+    .contact-form .form-message.error {
+      display: block;
+      background: #f8e8e8;
+      color: #7a2e2e;
+      border-left: 4px solid #b33a3a;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .featured-content h2 { font-size: 1.7rem; }
+      .article-card h3 { font-size: 1.4rem; }
+      .single-article { padding: 28px 20px; }
+      .single-article h1 { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- BLOG HEADER -->
+  <header class="blog-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo-area">
+          <div class="logo-icon">🌱</div>
+          <div>
+            <span class="logo-text">Autumn Root Journal</span>
+            <span class="logo-tagline">soil · seasons · slow growing</span>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+              <li><a href="index.html" data-nav="home">Home</a></li>
+              <li><a href="about.html" data-nav="about">About</a></li>
+              <li><a href="contact.html" data-nav="contact">Contact</a></li>
+              <li><a href="terms.html" data-nav="terms">Terms Of Privacy</a></li>
+              <li><a href="privacy.html" data-nav="privacy">Privacy Policy</a></li>
+              <li><a href="cookies.html" data-nav="cookies">Cookies Policy</a></li>
+              <li><a href="disclaimer.html" data-nav="disclaimer">Disclaimer</a></li>
+              <li><a href="categories.html" data-nav="categories">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-search">
+        <input type="search" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container" id="mainContent">
+    <!-- HOME VIEW -->
+    <div id="homeView">
+      <!-- FEATURED ARTICLE -->
+      <section class="featured-section" aria-label="Featured article">
+        <div class="featured-content">
+          <span class="category-tag">Soil & Compost</span>
+          <h2><a href="#" data-article="article1">The Living Soil: How to Read Earthworms and Fungal Threads</a></h2>
+          <p>Your soil is not inert. It breathes, digests, and communicates. Learn the field signs of healthy soil food web and simple tests you can do with a shovel and a jar.</p>
+          <div class="featured-meta">
+            <span>📅 April 8, 2025</span>
+            <span>⏱ 12 min read</span>
+          </div>
+        </div>
+        <div class="featured-image">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23d9d0c0'/%3E%3Ccircle cx='200' cy='150' r='60' fill='%238a7a60' opacity='0.5'/%3E%3Ctext x='200' y='160' font-family='Georgia' font-size='20' fill='%233f3a30' text-anchor='middle'%3E🌿 soil life%3C/text%3E%3C/svg%3E" alt="Hands holding dark, crumbly soil with a young seedling, illustrating soil health">
+        </div>
+      </section>
+
+      <!-- ARTICLES GRID with sidebar -->
+      <div class="layout-grid">
+        <!-- MAIN COLUMN: article cards -->
+        <div id="articleList">
+          <!-- ARTICLE 1 -->
+          <article class="article-card" data-category="soil" data-article-id="article1">
+            <span class="card-category">Soil & Compost</span>
+            <h3><a href="#" data-article="article1">The Living Soil: How to Read Earthworms and Fungal Threads</a></h3>
+            <p class="card-excerpt">Your soil is not inert. It breathes, digests, and communicates. Learn the field signs of healthy soil food web and simple tests you can do with a shovel and a jar.</p>
+            <div class="card-meta">
+              <span>Elena Marsh</span>
+              <span>April 8, 2025</span>
+              <span>12 min read</span>
+            </div>
+          </article>
+          <!-- ARTICLE 2 -->
+          <article class="article-card" data-category="seasonal" data-article-id="article2">
+            <span class="card-category">Seasonal Planting</span>
+            <h3><a href="#" data-article="article2">The Autumn Seed-Sowing Calendar: What to Plant When Nights Cool</a></h3>
+            <p class="card-excerpt">Cool-season crops thrive when soil is still warm but air is crisp. A region-by-region guide to spinach, radish, arugula, and overwintering garlic.</p>
+            <div class="card-meta">
+              <span>Elena Marsh</span>
+              <span>March 30, 2025</span>
+              <span>9 min read</span>
+            </div>
+          </article>
+          <!-- ARTICLE 3 -->
+          <article class="article-card" data-category="tools" data-article-id="article3">
+            <span class="card-category">Tools & Craft</span>
+            <h3><a href="#" data-article="article3">Sharpening, Oiling, and Storing: A Seasonal Ritual for Hand Tools</a></h3>
+            <p class="card-excerpt">A well-kept hoe and pruner last decades. Step-by-step maintenance for secateurs, spades, and hoes — plus the linseed oil mix I use every October.</p>
+            <div class="card-meta">
+              <span>Elena Marsh</span>
+              <span>March 22, 2025</span>
+              <span>7 min read</span>
+            </div>
+          </article>
+          <!-- ARTICLE 4 -->
+          <article class="article-card" data-category="soil" data-article-id="article4">
+            <span class="card-category">Soil & Compost</span>
+            <h3><a href="#" data-article="article4">Composting Without a Bin: The Trench and Sheet-Mulch Methods</a></h3>
+            <p class="card-excerpt">No space for a three-bin system? Direct composting and sheet mulching can build fertility right where you grow. Here’s how to do it without odors or pests.</p>
+            <div class="card-meta">
+              <span>Elena Marsh</span>
+              <span>March 15, 2025</span>
+              <span>10 min read</span>
+            </div>
+          </article>
+          <!-- ARTICLE 5 -->
+          <article class="article-card" data-category="seasonal" data-article-id="article5">
+            <span class="card-category">Seasonal Planting</span>
+            <h3><a href="#" data-article="article5">Overwintering Greens: Protection Without a Greenhouse</a></h3>
+            <p class="card-excerpt">Cloches, cold frames, and simple straw mulch can extend harvest into December. We compare methods for kale, mâche, and claytonia.</p>
+            <div class="card-meta">
+              <span>Elena Marsh</span>
+              <span>March 7, 2025</span>
+              <span>8 min read</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" aria-label="Blog sidebar">
+          <div class="sidebar-widget about-widget">
+            <h4>About the Journal</h4>
+            <p>Autumn Root Journal is an independent, reader-supported publication. We write about soil, compost, seeds, and the quiet craft of growing food — with no ads and no fluff.</p>
+            <p style="margin-top:12px"><a href="#" data-nav="about">Read our story →</a></p>
+          </div>
+          <div class="sidebar-widget">
+            <h4>Popular Articles</h4>
+            <ul>
+              <li><a href="#" data-article="article1">The Living Soil: How to Read Earthworms</a><span class="meta-small">12 min read</span></li>
+              <li><a href="#" data-article="article2">Autumn Seed-Sowing Calendar</a><span class="meta-small">9 min read</span></li>
+              <li><a href="#" data-article="article4">Composting Without a Bin</a><span class="meta-small">10 min read</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-widget newsletter-widget">
+            <h4>Letters from the Garden</h4>
+            <p style="font-size:0.9rem">One thoughtful email each month. No spam, no sales.</p>
+            <input type="email" id="sidebarNewsletterEmail" placeholder="Your email address" aria-label="Email for newsletter">
+            <button id="sidebarNewsletterBtn">Subscribe</button>
+            <p id="sidebarNewsletterMsg" style="font-size:0.8rem; margin-top:8px; color:#4a5e3e;"></p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- FAQ SECTION -->
+      <section style="margin: 40px 0 20px;">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h4>What makes Autumn Root Journal different from other gardening blogs?</h4>
+          <p>We are independent and reader-supported. Every article is written by practicing gardeners, not AI or content farms. We focus on soil health and slow, seasonal methods rather than quick hacks.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you accept guest posts or sponsored content?</h4>
+          <p>We occasionally accept guest articles from experienced growers, but we never publish sponsored posts or affiliate-driven listicles. Our recommendations come from personal use.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How can I support the journal?</h4>
+          <p>The best way is to subscribe to our monthly newsletter and share articles with fellow gardeners. We also have a voluntary membership option coming soon.</p>
+        </div>
+      </section>
+
+      <!-- ABOUT / CONTACT / PRIVACY quick links (content) -->
+      <div style="display: flex; flex-wrap: wrap; gap: 32px; margin: 40px 0; padding: 24px 0; border-top: 1px solid #e6e1d6; font-size:0.95rem;">
+        <div style="flex:1 1 200px;"><a href="#" data-nav="about"><strong>About</strong></a> — our editorial ethos, authors, and history.</div>
+        <div style="flex:1 1 200px;"><a href="#" data-nav="contact"><strong>Contact</strong></a> — pitch an idea or say hello.</div>
+        <div style="flex:1 1 200px;"><a href="#" data-nav="privacy"><strong>Privacy</strong></a> — how we handle your data.</div>
+        <div style="flex:1 1 200px;"><a href="#" data-nav="terms"><strong>Terms</strong></a> — usage and content licensing.</div>
+        <div style="flex:1 1 200px;"><a href="#" data-nav="cookies"><strong>Cookies</strong></a> — minimal, essential only.</div>
+      </div>
+    </div>
+
+    <!-- SINGLE ARTICLE VIEW (dynamic) -->
+    <div id="singleView" class="single-article"></div>
+
+    <!-- ABOUT PAGE VIEW (hidden) -->
+    <div id="aboutView" class="hide" style="background:#ffffff; border:1px solid #e6e1d6; border-radius:16px; padding:40px 44px; margin:32px 0;">
+      <h1>About Autumn Root Journal</h1>
+      <p><strong>Independent, reader-supported, and rooted in slow gardening.</strong></p>
+      <p>Autumn Root Journal began in 2019 as a printed zine for a small circle of allotment gardeners in the Pacific Northwest. Today it’s a digital publication reaching over 40,000 growers each month — but we still write every article by hand, from experience.</p>
+      <p>We believe that gardening is less about quick fixes and more about observation, patience, and a deep respect for soil life. Our articles avoid hype and focus on methods that work in real gardens, across climates and seasons.</p>
+      <p><strong>Elena Marsh</strong> is the founding editor. She has been growing food for 22 years and holds a certificate in soil science from Oregon State University. She writes most of the articles and edits every contribution.</p>
+      <p>We are entirely ad-free. Our only revenue comes from voluntary reader donations and the occasional workshop. This keeps our content independent and free from brand influence.</p>
+      <p><a href="#" data-nav="home">← Back to home</a></p>
+    </div>
+
+    <!-- CONTACT VIEW (with full form) -->
+    <div id="contactView" class="hide" style="background:#ffffff; border:1px solid #e6e1d6; border-radius:16px; padding:40px 44px; margin:32px 0;">
+      <h1>Contact Us</h1>
+      <p>We love hearing from fellow gardeners. Whether you have a question about a technique, a correction, or a pitch for a guest article — drop us a line.</p>
+      <p><strong>Email:</strong> hello@autumnrootjournal.com</p>
+      <p><strong>Pitch guidelines:</strong> We accept pitches from experienced gardeners only. Please include your growing zone, years of experience, and a short outline. We do not accept AI-generated content.</p>
+      <p><strong>Response time:</strong> Usually within 5–7 days.</p>
+      
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="contactName">Your name</label>
+          <input type="text" id="contactName" name="name" placeholder="e.g. Elena Marsh" required>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email address</label>
+          <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="contactSubject">Subject</label>
+          <input type="text" id="contactSubject" name="subject" placeholder="Question about soil / Pitch / Hello">
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" placeholder="Tell us about your garden, your question, or your idea…" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send message</button>
+        <div class="form-message" id="contactFormMessage"></div>
+      </form>
+      
+      <p style="margin-top:32px;"><a href="#" data-nav="home">← Back to home</a></p>
+    </div>
+
+    <!-- PRIVACY VIEW -->
+    <div id="privacyView" class="hide" style="background:#ffffff; border:1px solid #e6e1d6; border-radius:16px; padding:40px 44px; margin:32px 0;">
+      <h1>Privacy Policy</h1>
+      <p>We respect your privacy. This site does not use third-party analytics, tracking pixels, or advertising cookies. The only data we collect is your email address if you voluntarily subscribe to our newsletter.</p>
+      <p>We use a privacy-focused newsletter provider and never share or sell your email. You can unsubscribe at any time via the link in every email.</p>
+      <p>Our server logs basic technical information (IP address, browser type) for security and performance, but we do not link this to any personal identity.</p>
+      <p>If you have questions, contact us at privacy@autumnrootjournal.com.</p>
+      <p><a href="#" data-nav="home">← Back to home</a></p>
+    </div>
+
+    <!-- TERMS VIEW -->
+    <div id="termsView" class="hide" style="background:#ffffff; border:1px solid #e6e1d6; border-radius:16px; padding:40px 44px; margin:32px 0;">
+      <h1>Terms of Use</h1>
+      <p>All content on Autumn Root Journal is protected by copyright. You may share short excerpts with a link back to the original article. Republishing full articles without permission is not allowed.</p>
+      <p>We strive for accuracy but gardening involves many variables; use our advice at your own discretion. We are not liable for any outcomes from applying techniques described on this site.</p>
+      <p>By using this website, you agree to these terms. They may be updated occasionally.</p>
+      <p><a href="#" data-nav="home">← Back to home</a></p>
+    </div>
+
+    <!-- COOKIES VIEW -->
+    <div id="cookiesView" class="hide" style="background:#ffffff; border:1px solid #e6e1d6; border-radius:16px; padding:40px 44px; margin:32px 0;">
+      <h1>Cookie Policy</h1>
+      <p>We do not use advertising or tracking cookies. The only cookie we set is a small session cookie to remember your search filter preference (if you use the search feature). This cookie is strictly necessary and contains no personal data.</p>
+      <p>You can disable cookies in your browser settings, but the search filter may not function properly.</p>
+      <p><a href="#" data-nav="home">← Back to home</a></p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="blog-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Autumn Root</h5>
+          <ul>
+            <li><a href="#" data-nav="home">Home</a></li>
+            <li><a href="#" data-nav="about">About</a></li>
+            <li><a href="#" data-nav="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#" data-nav="soil">Soil & Compost</a></li>
+            <li><a href="#" data-nav="seasonal">Seasonal Planting</a></li>
+            <li><a href="#" data-nav="tools">Tools & Craft</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#" data-nav="privacy">Privacy</a></li>
+            <li><a href="#" data-nav="terms">Terms</a></li>
+            <li><a href="#" data-nav="cookies">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Autumn Root Journal. Independent gardening publication.</span>
+        <span>Made with care for the soil.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    (function() {
+      // ---- DATA for articles (full content) ----
+      const articles = {
+        article1: {
+          title: 'The Living Soil: How to Read Earthworms and Fungal Threads',
+          category: 'Soil & Compost',
+          author: 'Elena Marsh',
+          date: 'April 8, 2025',
+          readTime: '12 min read',
+          content: `
+            <p>When I first started gardening, I thought of soil as a static medium — something that held roots and needed occasional fertilizer. It took years of digging, observing, and failing to understand that soil is a living system. It inhales, exhales, digests, and communicates. The moment you see it that way, your entire approach to growing changes.</p>
+            <h2>What healthy soil actually looks like</h2>
+            <p>Push a spade into a bed that has been mulched and undisturbed for a few seasons. The soil should be dark, crumbly, and smell like rain on a forest floor. You’ll see white threads of fungal mycelium, tiny root hairs, and — if you’re lucky — the glistening bodies of earthworms. These are not just signs; they are the engineers of fertility.</p>
+            <p>Earthworms are often called ecosystem engineers. They pull organic matter down into their burrows, mix it with mineral soil, and excrete nutrient-rich casts. Their tunnels create macropores for air and water. A single acre of healthy pasture can contain over a million earthworms. In a garden bed, finding 10 to 15 worms in a spadeful is a good sign.</p>
+            <h3>Fungal threads: the underground internet</h3>
+            <p>Mycorrhizal fungi form symbiotic relationships with plant roots. They extend the root’s reach for water and nutrients, especially phosphorus. In return, the plant feeds them sugars. When you dig or rototill, you break these networks. That’s why no-dig gardening has gained such a following — it preserves the fungal architecture that took years to build.</p>
+            <h2>Simple field tests you can do today</h2>
+            <p><strong>1. The earthworm count:</strong> Dig a 30 cm x 30 cm x 30 cm hole in a few spots. Count the earthworms. Fewer than 3? Your soil biology may need feeding. More than 10? You’re doing something right.</p>
+            <p><strong>2. The jar test:</strong> Fill a jar one-third with soil, top with water, shake, and let settle. Sand settles first, then silt, then clay. The proportions tell you your texture — and how to manage it.</p>
+            <p><strong>3. The smell test:</strong> Healthy soil smells sweet, earthy, like geosmin. Sour or putrid smells indicate anaerobic conditions — often from compaction or waterlogging.</p>
+            <h2>How to feed the soil food web</h2>
+            <p>Compost, mulch, and cover crops are the three pillars. Compost introduces diverse microbes. Mulch protects the surface and feeds worms. Cover crops like crimson clover and daikon radish break compaction and add organic matter. Avoid synthetic fertilizers and pesticides — they disrupt the very biology you’re trying to nurture.</p>
+            <p>Start small. Add a layer of compost each autumn. Leave the leaves. Let a few weeds grow to feed pollinators. Over time, the soil will tell you its story — and you’ll only need to read the signs.</p>
+          `
+        },
+        article2: {
+          title: 'The Autumn Seed-Sowing Calendar: What to Plant When Nights Cool',
+          category: 'Seasonal Planting',
+          author: 'Elena Marsh',
+          date: 'March 30, 2025',
+          readTime: '9 min read',
+          content: `
+            <p>Autumn is not the end of the growing season — it’s a second spring, but quieter. The soil still holds summer warmth, while the air turns crisp. Many crops prefer these conditions, and some even taste sweeter after a light frost. Here’s how to plan your autumn sowing, whether you garden in zone 4 or zone 9.</p>
+            <h2>Why autumn planting works</h2>
+            <p>Cool-season crops — spinach, lettuce, radish, arugula, kale, and broccoli — germinate best when soil temperatures are between 10°C and 20°C. In late summer, the soil is often too hot. By early autumn, it has cooled just enough, and the shortening days signal these plants to focus on leaf and root growth rather than bolting.</p>
+            <h3>Region-by-region timing</h3>
+            <p><strong>Cool climates (zones 3–5):</strong> Start quick crops like radish and arugula in late July to early August. Spinach and mâche can be sown in August for a September harvest. Overwintering garlic goes in the ground from late September to mid-October.</p>
+            <p><strong>Temperate climates (zones 6–8):</strong> Your window is wider. Sow spinach, kale, and collards from late August through September. Direct-sow carrots and beets in early September for a late fall harvest. Garlic planting is ideal in October.</p>
+            <p><strong>Warm climates (zones 9–11):</strong> Autumn is your main growing season. Wait until October or November to sow lettuce, peas, and root crops. The cool nights will keep them sweet and tender.</p>
+            <h2>The best crops for autumn</h2>
+            <p><strong>Spinach:</strong> Sow thickly, harvest young leaves. ‘Winter Bloomsdale’ is exceptionally cold-hardy.</p>
+            <p><strong>Radishes:</strong> Ready in 25–30 days. ‘French Breakfast’ and ‘Daikon’ both thrive in cool weather.</p>
+            <p><strong>Arugula:</strong> Fast, peppery, and self-seeds readily. Let a few plants go to flower for next year’s crop.</p>
+            <p><strong>Garlic:</strong> Plant individual cloves pointed end up, 3–4 cm deep. Mulch heavily with straw after the first freeze.</p>
+            <h2>Protection strategies</h2>
+            <p>As nights drop below -2°C, use row cover or a cold frame to extend harvest. A simple hoop house made from PVC and greenhouse plastic can keep greens alive well into winter. For the coldest zones, mulch with 15–20 cm of straw after the ground freezes — this keeps temperatures stable and prevents heaving.</p>
+            <p>Autumn gardening is a lesson in patience and trust. You plant when the world is winding down, and you harvest when most gardens are asleep. That quiet reward is worth every cold morning.</p>
+          `
+        },
+        article3: {
+          title: 'Sharpening, Oiling, and Storing: A Seasonal Ritual for Hand Tools',
+          category: 'Tools & Craft',
+          author: 'Elena Marsh',
+          date: 'March 22, 2025',
+          readTime: '7 min read',
+          content: `
+            <p>Every October, I set aside an afternoon to tend to my hand tools. It’s a ritual that marks the end of the growing season — and it ensures that my pruners, hoes, and spades will be ready when spring returns. A well-maintained tool lasts decades; a neglected one becomes frustrating and even dangerous.</p>
+            <h2>Gather your supplies</h2>
+            <p>You’ll need: a metal file or diamond sharpener, a wire brush, sandpaper (medium and fine), a rag, boiled linseed oil or camellia oil, and a small container of fine steel wool. For pruners, a screwdriver and a small wrench are also useful.</p>
+            <h3>Step 1: Clean off the dirt</h3>
+            <p>Use a wire brush to remove caked soil and rust. For stubborn rust, scrub with sandpaper or steel wool. Pay attention to the junction between the blade and the handle — that’s where grime accumulates and causes stiffness.</p>
+            <h3>Step 2: Sharpen the edge</h3>
+            <p>For pruners and knives, clamp the tool securely or hold it firmly. Match the existing bevel angle and file in one direction, away from the edge. Three to five strokes is usually enough. For hoes and spades, a mill bastard file works well. Never sharpen the back side of a pruner blade — only the beveled side.</p>
+            <h3>Step 3: Oil and protect</h3>
+            <p>Wipe all metal surfaces with an oiled rag. Boiled linseed oil is traditional for wooden handles; camellia oil is excellent for blades because it’s food-safe and doesn’t gum up. Apply a thin coat — excess oil attracts dust.</p>
+            <h3>Step 4: Store properly</h3>
+            <p>Hang tools or stand them upright in a dry shed. Never leave them on the ground or in a bucket of water. For long-term storage, wrap blades in a cloth or cardboard sheath to prevent nicks.</p>
+            <h2>A note on wooden handles</h2>
+            <p>Wood handles dry out and crack if left untreated. Once a year, sand lightly and apply a 50/50 mix of boiled linseed oil and turpentine (or a commercial wood oil). Let it soak in, then wipe off the excess. This keeps the wood supple and prevents splinters.</p>
+            <p>Take an hour this autumn. Your future self — and your tools — will thank you.</p>
+          `
+        },
+        article4: {
+          title: 'Composting Without a Bin: The Trench and Sheet-Mulch Methods',
+          category: 'Soil & Compost',
+          author: 'Elena Marsh',
+          date: 'March 15, 2025',
+          readTime: '10 min read',
+          content: `
+            <p>Not everyone has space for a three-bin compost system. Maybe you garden on a balcony, or your yard is small, or you simply don’t want to manage a pile. The good news: you can compost directly in your garden beds with no bin, no turning, and no odors. Two methods stand out — trench composting and sheet mulching.</p>
+            <h2>Trench composting: bury and forget</h2>
+            <p>This is the oldest method in the book. Dig a trench 20–30 cm deep between rows of vegetables or in a bed you’re about to plant. Drop in kitchen scraps — fruit and vegetable peels, coffee grounds, eggshells, tea leaves. Avoid meat, dairy, and oily foods. Chop large pieces to speed decomposition. Backfill with soil and water well.</p>
+            <p>Within a few weeks, earthworms and microbes will break everything down. By the time you plant that bed next season, the organic matter will be fully incorporated. The trench method is perfect for small gardens because it fertilizes exactly where you grow, with zero smell and no pest attraction.</p>
+            <h3>What to compost (and what to skip)</h3>
+            <p><strong>Yes:</strong> vegetable scraps, fruit cores, coffee grounds, tea bags (remove staples), crushed eggshells, dead houseplants, grass clippings (thin layers).</p>
+            <p><strong>No:</strong> meat, fish, dairy, bones, oily foods, pet waste, diseased plants, invasive weed seeds.</p>
+            <h2>Sheet mulching: compost in place</h2>
+            <p>Sheet mulching (also called lasagna gardening) builds soil from the top down. Start with a layer of cardboard or newspaper (remove tape and staples) directly on the ground or over existing weeds. Wet it thoroughly. Then alternate thin layers of “green” (nitrogen-rich) and “brown” (carbon-rich) materials: grass clippings, kitchen scraps, coffee grounds, then straw, shredded leaves, or wood chips. Top with 5–10 cm of finished compost or garden soil.</p>
+            <p>Over 6–12 months, the layers break down into rich, dark soil. You can plant directly into the top layer the following season. This method suppresses weeds, retains moisture, and feeds the soil food web — all without a bin or turning.</p>
+            <h2>Troubleshooting</h2>
+            <p><strong>Smell?</strong> Usually too much green material or too wet. Add browns and aerate by poking holes with a pitchfork.</p>
+            <p><strong>Pests?</strong> Bury scraps deeper (at least 20 cm) and avoid attracting rodents by not adding meat or oily foods.</p>
+            <p><strong>Slow decomposition?</strong> Chop materials smaller, keep it moist like a wrung-out sponge, and add a handful of finished compost to inoculate with microbes.</p>
+            <p>Composting without a bin is not only possible — it’s often easier and more integrated with your garden. Try a trench this autumn and see for yourself.</p>
+          `
+        },
+        article5: {
+          title: 'Overwintering Greens: Protection Without a Greenhouse',
+          category: 'Seasonal Planting',
+          author: 'Elena Marsh',
+          date: 'March 7, 2025',
+          readTime: '8 min read',
+          content: `
+            <p>The first frost doesn’t have to mean the end of fresh salads. With a few simple protections, you can harvest kale, spinach, mâche, and claytonia well into winter — even in zone 5. You don’t need a heated greenhouse. You just need to block the wind and moderate temperature swings.</p>
+            <h2>Cold frames: the classic solution</h2>
+            <p>A cold frame is essentially a bottomless box with a transparent lid. You can build one from scrap wood and an old window, or buy a ready-made kit. Position it facing south for maximum winter sun. On sunny days, prop the lid open slightly to prevent overheating; close it before dusk to trap warmth.</p>
+            <p>Cold frames can keep the internal temperature 5–10°C warmer than outside. That’s enough to keep hardy greens alive through light freezes. In colder snaps, add a blanket or straw bale around the sides for extra insulation.</p>
+            <h3>Row cover and hoops</h3>
+            <p>For larger beds, use flexible hoops (PVC, metal, or even bent branches) covered with spunbond fabric or greenhouse plastic. Spunbond row cover (like Agribon) is breathable and provides 2–4°C of frost protection. Plastic creates a stronger greenhouse effect but needs venting on sunny days. Double-layer row cover can protect down to -8°C for the toughest crops.</p>
+            <h2>Mulch: the simple, low-tech method</h2>
+            <p>For crops like kale, collards, and leeks, a thick layer of straw or shredded leaves around the plants protects the roots and soil from deep freezing. The plants themselves can tolerate frost; it’s the freeze-thaw cycle that heaves them out of the ground. Mulch keeps soil temperatures stable.</p>
+            <p>Wait until the ground has frozen once before mulching. Applying too early can smother plants and attract rodents. Pile straw 15–20 cm deep around the base, leaving the tops exposed.</p>
+            <h2>Which greens are best for overwintering?</h2>
+            <p><strong>Kale:</strong> Extremely hardy. ‘Winterbor’ and ‘Red Russian’ survive single digits Fahrenheit with mulch.</p>
+            <p><strong>Spinach:</strong> ‘Winter Bloomsdale’ is bred for cold. Leaves get sweeter after frost.</p>
+            <p><strong>Mâche (corn salad):</strong> A winter classic. Survives in cold frames and even under snow.</p>
+            <p><strong>Claytonia (miner’s lettuce):</strong> Delicate, succulent, and remarkably cold-hardy. Self-seeds readily.</p>
+            <p>Overwintering greens is a game of small adjustments. Check your frames on warm days, vent when needed, and harvest lightly. The reward is a fresh, vitamin-rich salad in January — a taste of summer in the depths of winter.</p>
+          `
+        }
+      };
+
+      // ---- DOM refs ----
+      const homeView = document.getElementById('homeView');
+      const singleView = document.getElementById('singleView');
+      const articleList = document.getElementById('articleList');
+      const aboutView = document.getElementById('aboutView');
+      const contactView = document.getElementById('contactView');
+      const privacyView = document.getElementById('privacyView');
+      const termsView = document.getElementById('termsView');
+      const cookiesView = document.getElementById('cookiesView');
+      const searchInput = document.getElementById('searchInput');
+      const navLinks = document.querySelectorAll('[data-nav]');
+
+      // ---- Helper: show home, hide all others ----
+      function showHome() {
+        homeView.classList.remove('hide');
+        singleView.classList.remove('active');
+        singleView.innerHTML = '';
+        [aboutView, contactView, privacyView, termsView, cookiesView].forEach(v => v.classList.add('hide'));
+        document.querySelectorAll('.main-nav a').forEach(a => a.classList.remove('active'));
+        const homeNav = document.querySelector('.main-nav a[data-nav="home"]');
+        if (homeNav) homeNav.classList.add('active');
+      }
+
+      // ---- Helper: show single article ----
+      function showArticle(articleId) {
+        const article = articles[articleId];
+        if (!article) return;
+        homeView.classList.add('hide');
+        [aboutView, contactView, privacyView, termsView, cookiesView].forEach(v => v.classList.add('hide'));
+        singleView.classList.add('active');
+
+        singleView.innerHTML = `
+          <a href="#" class="back-link" data-nav="home">← Back to all articles</a>
+          <h1>${article.title}</h1>
+          <div class="single-meta">
+            <span>${article.author}</span>
+            <span>${article.date}</span>
+            <span>${article.readTime}</span>
+            <span class="badge">${article.category}</span>
+          </div>
+          ${article.content}
+          <p style="margin-top:40px;"><a href="#" data-nav="home">← Back to all articles</a></p>
+        `;
+
+        // re-bind back links inside single view
+        singleView.querySelectorAll('[data-nav="home"]').forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            showHome();
+          });
+        });
+      }
+
+      // ---- Helper: show static page ----
+      function showStaticPage(pageId) {
+        homeView.classList.add('hide');
+        singleView.classList.remove('active');
+        [aboutView, contactView, privacyView, termsView, cookiesView].forEach(v => v.classList.add('hide'));
+        if (pageId === 'about') aboutView.classList.remove('hide');
+        if (pageId === 'contact') contactView.classList.remove('hide');
+        if (pageId === 'privacy') privacyView.classList.remove('hide');
+        if (pageId === 'terms') termsView.classList.remove('hide');
+        if (pageId === 'cookies') cookiesView.classList.remove('hide');
+        document.querySelectorAll('.main-nav a').forEach(a => a.classList.remove('active'));
+      }
+
+      // ---- Event delegation for article links and nav ----
+      document.body.addEventListener('click', (e) => {
+        const articleLink = e.target.closest('[data-article]');
+        if (articleLink) {
+          e.preventDefault();
+          const articleId = articleLink.getAttribute('data-article');
+          showArticle(articleId);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          return;
+        }
+
+        const navLink = e.target.closest('[data-nav]');
+        if (navLink) {
+          e.preventDefault();
+          const nav = navLink.getAttribute('data-nav');
+          if (nav === 'home') {
+            showHome();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else if (nav === 'about') {
+            showStaticPage('about');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else if (nav === 'contact') {
+            showStaticPage('contact');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else if (nav === 'privacy') {
+            showStaticPage('privacy');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else if (nav === 'terms') {
+            showStaticPage('terms');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else if (nav === 'cookies') {
+            showStaticPage('cookies');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else if (nav === 'soil' || nav === 'seasonal' || nav === 'tools') {
+            // filter articles by category
+            showHome();
+            const cards = articleList.querySelectorAll('.article-card');
+            cards.forEach(card => {
+              if (card.getAttribute('data-category') === nav) {
+                card.classList.remove('hide');
+              } else {
+                card.classList.add('hide');
+              }
+            });
+            // update active nav
+            document.querySelectorAll('.main-nav a').forEach(a => a.classList.remove('active'));
+            if (navLink.classList.contains('main-nav') || navLink.closest('.main-nav')) {
+              navLink.classList.add('active');
+            }
+            // reset search input
+            if (searchInput) searchInput.value = '';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }
+      });
+
+      // ---- Search filtering ----
+      if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+          const query = e.target.value.toLowerCase().trim();
+          showHome(); // ensure home view
+          const cards = articleList.querySelectorAll('.article-card');
+          cards.forEach(card => {
+            const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+            const excerpt = card.querySelector('.card-excerpt')?.textContent.toLowerCase() || '';
+            const category = card.getAttribute('data-category') || '';
+            if (query === '' || title.includes(query) || excerpt.includes(query) || category.includes(query)) {
+              card.classList.remove('hide');
+            } else {
+              card.classList.add('hide');
+            }
+          });
+          // reset nav active
+          document.querySelectorAll('.main-nav a').forEach(a => a.classList.remove('active'));
+        });
+      }
+
+      // ---- Newsletter (sidebar) ----
+      const newsletterBtn = document.getElementById('sidebarNewsletterBtn');
+      const newsletterEmail = document.getElementById('sidebarNewsletterEmail');
+      const newsletterMsg = document.getElementById('sidebarNewsletterMsg');
+      if (newsletterBtn) {
+        newsletterBtn.addEventListener('click', function() {
+          const email = newsletterEmail.value.trim();
+          if (email && email.includes('@') && email.includes('.')) {
+            newsletterMsg.textContent = 'Thank you — you’re on the list.';
+            newsletterEmail.value = '';
+          } else {
+            newsletterMsg.textContent = 'Please enter a valid email address.';
+          }
+        });
+      }
+
+      // ---- Contact Form Handling ----
+      const contactForm = document.getElementById('contactForm');
+      const contactFormMessage = document.getElementById('contactFormMessage');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Get values
+          const name = document.getElementById('contactName').value.trim();
+          const email = document.getElementById('contactEmail').value.trim();
+          const subject = document.getElementById('contactSubject').value.trim();
+          const message = document.getElementById('contactMessage').value.trim();
+          
+          // Reset message
+          contactFormMessage.className = 'form-message';
+          contactFormMessage.textContent = '';
+          
+          // Validation
+          if (!name) {
+            contactFormMessage.className = 'form-message error';
+            contactFormMessage.textContent = 'Please enter your name.';
+            return;
+          }
+          if (!email || !email.includes('@') || !email.includes('.')) {
+            contactFormMessage.className = 'form-message error';
+            contactFormMessage.textContent = 'Please enter a valid email address.';
+            return;
+          }
+          if (!message) {
+            contactFormMessage.className = 'form-message error';
+            contactFormMessage.textContent = 'Please write a message.';
+            return;
+          }
+          
+          // Simulate success (no actual backend)
+          contactFormMessage.className = 'form-message success';
+          contactFormMessage.textContent = `Thank you, ${name}! Your message has been sent. We'll reply to ${email} within 5–7 days.`;
+          
+          // Optionally reset form
+          // contactForm.reset();
+          // But keep values for demo clarity — or reset partially:
+          document.getElementById('contactName').value = '';
+          document.getElementById('contactEmail').value = '';
+          document.getElementById('contactSubject').value = '';
+          document.getElementById('contactMessage').value = '';
+        });
+      }
+
+      // Ensure home visible on load
+      showHome();
+    })();
+  </script>
+</body>
+</html>
